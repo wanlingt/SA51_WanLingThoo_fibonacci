@@ -21,14 +21,14 @@ it will return me the following JSON:
 } 
 ```
 
-* http://myserver:8000/greeting also returns a "Hello, User!" greeting
+* http://myserver:8000/greeting also returns a "Hello, User!" greeting. This allows us to test if the application is running.
 
 ## Docker
-* To create a Docker image, enter 
+* To create the Docker image, enter 
 ```
 docker build -f Dockerfile -t docker-fibonacci-springboot .
 ```
 * To run the Docker container, enter
 ```
-dockerun -p 8000:8000 docker-fibonacci-springboot
+docker run -p 8000:8000 docker-fibonacci-springboot
 ```
